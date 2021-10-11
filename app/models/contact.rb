@@ -7,4 +7,5 @@ class Contact
     @last_name = input_options[:last_name]
     @email = input_options[:email]
     @phone_number = input_options[:phone_number]
+  end
 end
