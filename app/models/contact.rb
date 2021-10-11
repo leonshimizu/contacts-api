@@ -8,4 +8,8 @@ class Contact
     @email = input_options[:email]
     @phone_number = input_options[:phone_number]
   end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
