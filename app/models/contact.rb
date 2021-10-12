@@ -12,4 +12,9 @@ class Contact
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def info
+    "Hi my name is #{full_name} and you can get ahold of me by email (#{@email}) or by phone (#{@phone_number})."
+  end
+
 end
