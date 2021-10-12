@@ -1,5 +1,3 @@
-# require 'faker'
-
 class ContactsController < ApplicationController
   
   def first_contact
@@ -14,7 +12,7 @@ class ContactsController < ApplicationController
     
   def times100
     contact_list = []
-    
+           
     100.times do
       contact = Contact.new
       contact_list << contact 
@@ -24,7 +22,7 @@ class ContactsController < ApplicationController
   end
 
   def faker_test
-    # p Faker::Name.name
+    p Faker::Name.name
     render json: {message: "hello"}
   end
 
