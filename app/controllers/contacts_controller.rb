@@ -1,7 +1,8 @@
 class ContactsController < ApplicationController
   
   def first_contact
-    render json: {message: "Hello"}
+    contacts = Contact.all
+    render json: {contacts: contacts}
   end
     
 end
