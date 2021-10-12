@@ -2,3 +2,9 @@ GET http://localhost:3000/test.json
 
 ###
 Get http://localhost:3000/all.json
+
+###
+Get http://localhost:3000/new_contacts.json
+
+###
+Get http://localhost:3000/faker.json
