@@ -1,4 +1,4 @@
-GET http://localhost:3000/test.json
+GET http://localhost:3000/first.json
 
 ###
 Get http://localhost:3000/all.json
