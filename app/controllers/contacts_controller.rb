@@ -22,8 +22,14 @@ class ContactsController < ApplicationController
   end
 
   def faker_test
-    p Faker::Name.name
-    render json: {message: "hello"}
+    fake_first_name =  Faker::Name.first_name
+    fake_last_name = Faker::Name.last_name
+    fake_email = "#{fake_first_name}.#{fake_last_name}@gmail.com"
+    render json: {
+    first_name: fake_first_name, 
+    last_name: fake_last_name,
+    email: fake_email
+  }
   end
 
 end
